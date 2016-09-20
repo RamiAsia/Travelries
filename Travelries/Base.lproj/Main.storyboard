@@ -9,7 +9,7 @@
         <!--Moment-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Travelries" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MomentViewController" customModule="Travelries" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -18,14 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="7nr-ji-c2Y">
-                                <rect key="frame" x="60" y="103" width="280" height="373"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7nr-ji-c2Y">
+                                <rect key="frame" x="60" y="103" width="899" height="540"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ace-EQ-7bR">
-                                        <rect key="frame" x="-20" y="-20" width="280" height="198"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5z-wO-iDQ">
+                                        <rect key="frame" x="-20" y="-20" width="400" height="516"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="278-y2-W3l">
-                                                <rect key="frame" x="20" y="20" width="240" height="128"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="278-y2-W3l">
+                                                <rect key="frame" x="20" y="20" width="360" height="235"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="235" id="SOT-iz-Hes"/>
                                                 </constraints>
@@ -40,66 +40,74 @@
                                                     </mask>
                                                 </variation>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDa-6F-s5C">
-                                                <rect key="frame" x="121" y="160" width="38" height="18"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Sample Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDa-6F-s5C">
+                                                <rect key="frame" x="20" y="255" width="360" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="161" y="240" width="38" height="0.0"/>
-                                                </variation>
                                             </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="218" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6ra-XS-hgg">
+                                                <rect key="frame" x="40" y="272" width="320" height="224"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
                                         </subviews>
-                                        <variation key="widthClass=compact" alignment="center" axis="vertical" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="360" height="240"/>
-                                        </variation>
+                                        <variation key="widthClass=compact" axis="vertical"/>
                                     </stackView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6ra-XS-hgg">
-                                        <rect key="frame" x="20" y="225" width="240" height="128"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
-                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="20" y="258" width="320" height="213"/>
-                                        </variation>
-                                    </textView>
                                 </subviews>
-                                <variation key="widthClass=compact" alignment="center" axis="vertical" misplaced="YES">
-                                    <rect key="frame" x="20" y="80" width="360" height="471"/>
-                                </variation>
+                                <variation key="widthClass=compact" alignment="center" axis="vertical"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="7nr-ji-c2Y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="3Pg-Yt-4dS"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="7nr-ji-c2Y" secondAttribute="bottom" constant="5" id="nT1-9A-Nyr"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="7nr-ji-c2Y" secondAttribute="trailing" id="rGl-oL-Nzh"/>
-                            <constraint firstItem="7nr-ji-c2Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ucH-F3-Amo"/>
+                            <constraint firstItem="7nr-ji-c2Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="13x-yT-DkL"/>
+                            <constraint firstItem="7nr-ji-c2Y" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="5Y4-gR-hwr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7nr-ji-c2Y" secondAttribute="bottom" constant="44" id="Boa-EM-u1b"/>
+                            <constraint firstItem="7nr-ji-c2Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FC8-Wu-7oT"/>
+                            <constraint firstItem="7nr-ji-c2Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Oix-r5-WJq"/>
+                            <constraint firstItem="7nr-ji-c2Y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="Vsk-Uz-5wb"/>
+                            <constraint firstItem="7nr-ji-c2Y" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="caU-Jd-aCT"/>
+                            <constraint firstItem="7nr-ji-c2Y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="nxq-A7-fEl"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="3Pg-Yt-4dS"/>
-                                <exclude reference="nT1-9A-Nyr"/>
-                                <exclude reference="rGl-oL-Nzh"/>
-                                <exclude reference="ucH-F3-Amo"/>
+                                <exclude reference="13x-yT-DkL"/>
+                                <exclude reference="5Y4-gR-hwr"/>
+                                <exclude reference="FC8-Wu-7oT"/>
+                                <exclude reference="Oix-r5-WJq"/>
+                                <exclude reference="Vsk-Uz-5wb"/>
+                                <exclude reference="caU-Jd-aCT"/>
+                                <exclude reference="nxq-A7-fEl"/>
+                                <exclude reference="Boa-EM-u1b"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="constraints">
-                                <include reference="3Pg-Yt-4dS"/>
-                                <include reference="nT1-9A-Nyr"/>
-                                <include reference="rGl-oL-Nzh"/>
-                                <include reference="ucH-F3-Amo"/>
+                                <include reference="13x-yT-DkL"/>
+                                <include reference="5Y4-gR-hwr"/>
+                                <include reference="FC8-Wu-7oT"/>
+                                <include reference="Oix-r5-WJq"/>
+                                <include reference="Vsk-Uz-5wb"/>
+                                <include reference="caU-Jd-aCT"/>
+                                <include reference="nxq-A7-fEl"/>
+                                <include reference="Boa-EM-u1b"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Moment" id="2vL-d6-C5u"/>
+                    <connections>
+                        <outlet property="locationLAbel" destination="qDa-6F-s5C" id="3zL-an-v06"/>
+                        <outlet property="locationLabel" destination="qDa-6F-s5C" id="sTm-la-RM6"/>
+                        <outlet property="momentDescription" destination="6ra-XS-hgg" id="2OI-Fp-lLQ"/>
+                        <outlet property="momentPhoto" destination="278-y2-W3l" id="bTN-Ab-qf9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2140.5" y="350"/>
+            <point key="canvasLocation" x="1704" y="350"/>
         </scene>
         <!--My Moments-->
         <scene sceneID="RdE-Wl-nda">
@@ -110,8 +118,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MomentTableViewCell" rowHeight="90" id="C9m-fB-P1x" customClass="MomentTableViewCell" customModule="Travelries" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="22" width="600" height="90"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MomentTableViewCell" rowHeight="90" id="C9m-fB-P1x" customClass="MomentTableViewCell" customModule="Travelries" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="86" width="600" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C9m-fB-P1x" id="UrW-IZ-4pe">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="89"/>
@@ -141,6 +149,7 @@
                                     <outlet property="locationLabel" destination="okS-xa-5h7" id="Z7L-0q-kwV"/>
                                     <outlet property="momentPhoto" destination="irP-EX-z9W" id="5bO-4b-Mu9"/>
                                     <outlet property="nameLabel" destination="gJ1-eC-ZEC" id="YNV-YO-2g8"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowMoment" id="HHI-vT-PFo"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -166,27 +175,28 @@
                         <viewControllerLayoutGuide type="bottom" id="eOA-mL-JZt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="887-hl-JZE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sZs-2F-dmS">
-                                <rect key="frame" x="0.0" y="71" width="280" height="470"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sZs-2F-dmS">
+                                <rect key="frame" x="0.0" y="71" width="614" height="128"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Moment name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FIZ-VR-9rs">
-                                        <rect key="frame" x="20" y="20" width="142" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Moment name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FIZ-VR-9rs">
+                                        <rect key="frame" x="0.0" y="0.0" width="114" height="128"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <variation key="widthClass=compact" ambiguous="YES">
                                             <rect key="frame" x="0.0" y="0.0" width="114" height="30"/>
                                         </variation>
                                     </textField>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mp0-zg-4XL">
-                                        <rect key="frame" x="20" y="120" width="240" height="128"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mp0-zg-4XL">
+                                        <rect key="frame" x="124" y="0.0" width="240" height="128"/>
                                         <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                             <rect key="frame" x="0.0" y="40" width="240" height="128"/>
                                         </variation>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LH6-00-jfN">
-                                        <rect key="frame" x="20" y="322" width="240" height="128"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LH6-00-jfN">
+                                        <rect key="frame" x="374" y="0.0" width="240" height="128"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -224,7 +234,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rfw-RL-QCz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1222.5" y="350"/>
+            <point key="canvasLocation" x="828" y="720"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SUw-QS-uZ8">
@@ -248,4 +258,7 @@
     <resources>
         <image name="defaultPhoto" width="360" height="360"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="HHI-vT-PFo"/>
+    </inferredMetricsTieBreakers>
 </document>
