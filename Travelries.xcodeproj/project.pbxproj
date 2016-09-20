@@ -13,6 +13,7 @@
 		250BD4131D9151BE0054AE7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 250BD4121D9151BE0054AE7E /* Assets.xcassets */; };
 		250BD4161D9151BE0054AE7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250BD4141D9151BE0054AE7E /* LaunchScreen.storyboard */; };
 		250BD4211D9151BE0054AE7E /* TravelriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250BD4201D9151BE0054AE7E /* TravelriesTests.swift */; };
+		250BD42F1D915DB10054AE7E /* Moment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250BD42E1D915DB10054AE7E /* Moment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		250BD41C1D9151BE0054AE7E /* TravelriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		250BD4201D9151BE0054AE7E /* TravelriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelriesTests.swift; sourceTree = "<group>"; };
 		250BD4221D9151BE0054AE7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		250BD42E1D915DB10054AE7E /* Moment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		250BD40A1D9151BE0054AE7E /* Travelries */ = {
 			isa = PBXGroup;
 			children = (
+				250BD42B1D915D680054AE7E /* Model */,
 				250BD40B1D9151BE0054AE7E /* AppDelegate.swift */,
 				250BD40D1D9151BE0054AE7E /* ViewController.swift */,
 				250BD40F1D9151BE0054AE7E /* Main.storyboard */,
@@ -94,6 +97,14 @@
 				250BD4221D9151BE0054AE7E /* Info.plist */,
 			);
 			path = TravelriesTests;
+			sourceTree = "<group>";
+		};
+		250BD42B1D915D680054AE7E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				250BD42E1D915DB10054AE7E /* Moment.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +210,7 @@
 			files = (
 				250BD40E1D9151BE0054AE7E /* ViewController.swift in Sources */,
 				250BD40C1D9151BE0054AE7E /* AppDelegate.swift in Sources */,
+				250BD42F1D915DB10054AE7E /* Moment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
