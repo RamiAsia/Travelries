@@ -21,7 +21,7 @@ class MomentTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+         self.navigationItem.leftBarButtonItem = self.editButtonItem()
         
         
         // Load sample moments
@@ -127,7 +127,7 @@ class MomentTableViewController: UITableViewController {
     
     func loadSampleMoments() {
         let photo1 = UIImage(named: "sample1")!
-        let moment1 = Moment(name: "Skiing", momentDescription: "It was a beautiful moment. Purely white snow. Notihing else could be seen.", photo: photo1, locality: "Los Angeles", country: "Sweden", date: NSDate(), favorite: true)!
+        let moment1 = Moment(name: "Skiing", momentDescription: "It was a beautiful moment. Purely white snow. Nothing else could be seen.", photo: photo1, locality: "Los Angeles", country: "Sweden", date: NSDate(), favorite: true)!
         
         let photo2 = UIImage(named: "sample2")!
         let moment2 = Moment(name: "Swimming with Rosa", momentDescription: "The water was clear and Rosa's mug made it weirdly incredibly memorable.", photo: photo2, locality: "Santa's House", country: "Russia", date: NSDate(), favorite: true)!
