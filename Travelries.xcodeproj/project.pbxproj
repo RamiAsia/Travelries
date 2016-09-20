@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		250BD40C1D9151BE0054AE7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250BD40B1D9151BE0054AE7E /* AppDelegate.swift */; };
+		250BD40E1D9151BE0054AE7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250BD40D1D9151BE0054AE7E /* ViewController.swift */; };
+		250BD4111D9151BE0054AE7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250BD40F1D9151BE0054AE7E /* Main.storyboard */; };
+		250BD4131D9151BE0054AE7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 250BD4121D9151BE0054AE7E /* Assets.xcassets */; };
+		250BD4161D9151BE0054AE7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250BD4141D9151BE0054AE7E /* LaunchScreen.storyboard */; };
+		250BD4211D9151BE0054AE7E /* TravelriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250BD4201D9151BE0054AE7E /* TravelriesTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		250BD41D1D9151BE0054AE7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 250BD4001D9151BE0054AE7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 250BD4071D9151BE0054AE7E;
+			remoteInfo = Travelries;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		250BD4081D9151BE0054AE7E /* Travelries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travelries.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		250BD40B1D9151BE0054AE7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		250BD40D1D9151BE0054AE7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		250BD4101D9151BE0054AE7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		250BD4121D9151BE0054AE7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		250BD4151D9151BE0054AE7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		250BD4171D9151BE0054AE7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		250BD41C1D9151BE0054AE7E /* TravelriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		250BD4201D9151BE0054AE7E /* TravelriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelriesTests.swift; sourceTree = "<group>"; };
+		250BD4221D9151BE0054AE7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		250BD4051D9151BE0054AE7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		250BD4191D9151BE0054AE7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		250BD3FF1D9151BE0054AE7E = {
+			isa = PBXGroup;
+			children = (
+				250BD40A1D9151BE0054AE7E /* Travelries */,
+				250BD41F1D9151BE0054AE7E /* TravelriesTests */,
+				250BD4091D9151BE0054AE7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		250BD4091D9151BE0054AE7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				250BD4081D9151BE0054AE7E /* Travelries.app */,
+				250BD41C1D9151BE0054AE7E /* TravelriesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		250BD40A1D9151BE0054AE7E /* Travelries */ = {
+			isa = PBXGroup;
+			children = (
+				250BD40B1D9151BE0054AE7E /* AppDelegate.swift */,
+				250BD40D1D9151BE0054AE7E /* ViewController.swift */,
+				250BD40F1D9151BE0054AE7E /* Main.storyboard */,
+				250BD4121D9151BE0054AE7E /* Assets.xcassets */,
+				250BD4141D9151BE0054AE7E /* LaunchScreen.storyboard */,
+				250BD4171D9151BE0054AE7E /* Info.plist */,
+			);
+			path = Travelries;
+			sourceTree = "<group>";
+		};
+		250BD41F1D9151BE0054AE7E /* TravelriesTests */ = {
+			isa = PBXGroup;
+			children = (
+				250BD4201D9151BE0054AE7E /* TravelriesTests.swift */,
+				250BD4221D9151BE0054AE7E /* Info.plist */,
+			);
+			path = TravelriesTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		250BD4071D9151BE0054AE7E /* Travelries */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 250BD4251D9151BE0054AE7E /* Build configuration list for PBXNativeTarget "Travelries" */;
+			buildPhases = (
+				250BD4041D9151BE0054AE7E /* Sources */,
+				250BD4051D9151BE0054AE7E /* Frameworks */,
+				250BD4061D9151BE0054AE7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Travelries;
+			productName = Travelries;
+			productReference = 250BD4081D9151BE0054AE7E /* Travelries.app */;
+			productType = "com.apple.product-type.application";
+		};
+		250BD41B1D9151BE0054AE7E /* TravelriesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 250BD4281D9151BE0054AE7E /* Build configuration list for PBXNativeTarget "TravelriesTests" */;
+			buildPhases = (
+				250BD4181D9151BE0054AE7E /* Sources */,
+				250BD4191D9151BE0054AE7E /* Frameworks */,
+				250BD41A1D9151BE0054AE7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				250BD41E1D9151BE0054AE7E /* PBXTargetDependency */,
+			);
+			name = TravelriesTests;
+			productName = TravelriesTests;
+			productReference = 250BD41C1D9151BE0054AE7E /* TravelriesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		250BD4001D9151BE0054AE7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Rami;
+				TargetAttributes = {
+					250BD4071D9151BE0054AE7E = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					250BD41B1D9151BE0054AE7E = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 250BD4071D9151BE0054AE7E;
+					};
+				};
+			};
+			buildConfigurationList = 250BD4031D9151BE0054AE7E /* Build configuration list for PBXProject "Travelries" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 250BD3FF1D9151BE0054AE7E;
+			productRefGroup = 250BD4091D9151BE0054AE7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				250BD4071D9151BE0054AE7E /* Travelries */,
+				250BD41B1D9151BE0054AE7E /* TravelriesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		250BD4061D9151BE0054AE7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				250BD4161D9151BE0054AE7E /* LaunchScreen.storyboard in Resources */,
+				250BD4131D9151BE0054AE7E /* Assets.xcassets in Resources */,
+				250BD4111D9151BE0054AE7E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		250BD41A1D9151BE0054AE7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		250BD4041D9151BE0054AE7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				250BD40E1D9151BE0054AE7E /* ViewController.swift in Sources */,
+				250BD40C1D9151BE0054AE7E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		250BD4181D9151BE0054AE7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				250BD4211D9151BE0054AE7E /* TravelriesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		250BD41E1D9151BE0054AE7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 250BD4071D9151BE0054AE7E /* Travelries */;
+			targetProxy = 250BD41D1D9151BE0054AE7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		250BD40F1D9151BE0054AE7E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				250BD4101D9151BE0054AE7E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		250BD4141D9151BE0054AE7E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				250BD4151D9151BE0054AE7E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		250BD4231D9151BE0054AE7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		250BD4241D9151BE0054AE7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		250BD4261D9151BE0054AE7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Travelries/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.RamiAsia.Travelries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		250BD4271D9151BE0054AE7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Travelries/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.RamiAsia.Travelries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		250BD4291D9151BE0054AE7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TravelriesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.RamiAsia.TravelriesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Travelries.app/Travelries";
+			};
+			name = Debug;
+		};
+		250BD42A1D9151BE0054AE7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TravelriesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.RamiAsia.TravelriesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Travelries.app/Travelries";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		250BD4031D9151BE0054AE7E /* Build configuration list for PBXProject "Travelries" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				250BD4231D9151BE0054AE7E /* Debug */,
+				250BD4241D9151BE0054AE7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		250BD4251D9151BE0054AE7E /* Build configuration list for PBXNativeTarget "Travelries" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				250BD4261D9151BE0054AE7E /* Debug */,
+				250BD4271D9151BE0054AE7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		250BD4281D9151BE0054AE7E /* Build configuration list for PBXNativeTarget "TravelriesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				250BD4291D9151BE0054AE7E /* Debug */,
+				250BD42A1D9151BE0054AE7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 250BD4001D9151BE0054AE7E /* Project object */;
+}
