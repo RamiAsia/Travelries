@@ -21,10 +21,10 @@
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7nr-ji-c2Y">
                                 <rect key="frame" x="60" y="103" width="787" height="360"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D5z-wO-iDQ">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D5z-wO-iDQ">
                                         <rect key="frame" x="0.0" y="0.0" width="787" height="360"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="278-y2-W3l">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="278-y2-W3l">
                                                 <rect key="frame" x="0.0" y="0.0" width="360" height="360"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="235" id="SOT-iz-Hes"/>
@@ -40,13 +40,13 @@
                                                     </mask>
                                                 </variation>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Sample Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDa-6F-s5C">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sample Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDa-6F-s5C">
                                                 <rect key="frame" x="360" y="0.0" width="107" height="360"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="218" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6ra-XS-hgg">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="218" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6ra-XS-hgg">
                                                 <rect key="frame" x="467" y="0.0" width="320" height="360"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -164,9 +164,9 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tfd-uh-1hD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-109.5" y="350"/>
+            <point key="canvasLocation" x="-120" y="303"/>
         </scene>
-        <!--View Controller-->
+        <!--New Moment-->
         <scene sceneID="we9-c3-zzs">
             <objects>
                 <viewController id="0cH-hJ-xFa" sceneMemberID="viewController">
@@ -178,45 +178,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sZs-2F-dmS">
-                                <rect key="frame" x="0.0" y="71" width="614" height="128"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="TpR-ka-PV1">
+                                <rect key="frame" x="54" y="160" width="286" height="452"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Moment name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FIZ-VR-9rs">
-                                        <rect key="frame" x="0.0" y="0.0" width="114" height="128"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <variation key="widthClass=compact" ambiguous="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="114" height="30"/>
-                                        </variation>
-                                    </textField>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mp0-zg-4XL">
-                                        <rect key="frame" x="124" y="0.0" width="240" height="128"/>
-                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="40" width="240" height="128"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="240" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="Mp0-zg-4XL">
+                                        <rect key="frame" x="26" y="20" width="240" height="240"/>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="340" height="229"/>
                                         </variation>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LH6-00-jfN">
-                                        <rect key="frame" x="374" y="0.0" width="240" height="128"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Moment Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sAR-BA-SG5">
+                                        <rect key="frame" x="26" y="268" width="240" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="235" width="340" height="30"/>
+                                        </variation>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="z7n-U1-jd1">
+                                        <rect key="frame" x="20" y="304" width="240" height="128"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="178" width="240" height="128"/>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="271" width="340" height="229"/>
                                         </variation>
                                     </textView>
                                 </subviews>
-                                <variation key="widthClass=compact" alignment="top" axis="vertical" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="90" width="240" height="306"/>
-                                </variation>
+                                <variation key="widthClass=compact" axis="vertical"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="TpR-ka-PV1" secondAttribute="trailing" constant="15" id="8vo-1q-TUs">
+                                <variation key="widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="TpR-ka-PV1" firstAttribute="top" secondItem="izV-ej-Qru" secondAttribute="bottom" constant="60" id="UVM-YO-INc">
+                                <variation key="widthClass=compact" constant="16"/>
+                            </constraint>
+                            <constraint firstItem="eOA-mL-JZt" firstAttribute="top" secondItem="TpR-ka-PV1" secondAttribute="bottom" constant="20" id="Vcy-uU-S8y">
+                                <variation key="widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="TpR-ka-PV1" firstAttribute="leading" secondItem="887-hl-JZE" secondAttribute="leadingMargin" constant="15" id="bFX-kp-2gl">
+                                <variation key="widthClass=compact" constant="10"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8vo-1q-TUs"/>
+                                <exclude reference="UVM-YO-INc"/>
+                                <exclude reference="bFX-kp-2gl"/>
+                                <exclude reference="Vcy-uU-S8y"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="8vo-1q-TUs"/>
+                                <include reference="UVM-YO-INc"/>
+                                <include reference="bFX-kp-2gl"/>
+                                <include reference="Vcy-uU-S8y"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="New Moment" id="Ryg-TI-20u"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufY-sA-GLO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="556.5" y="1257"/>
+            <point key="canvasLocation" x="970.5" y="1374"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="P0x-eF-OrI">
@@ -253,6 +282,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t0n-TF-Ckf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1027.5" y="350"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="o3i-xl-gqq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mF1-nt-9V6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="z4E-Nw-H1h">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0cH-hJ-xFa" kind="relationship" relationship="rootViewController" id="Kmy-Ym-h7c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="duJ-eA-VQ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.5" y="1374"/>
         </scene>
     </scenes>
     <resources>
