@@ -119,7 +119,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MomentTableViewCell" rowHeight="90" id="C9m-fB-P1x" customClass="MomentTableViewCell" customModule="Travelries" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="86" width="600" height="90"/>
+                                <rect key="frame" x="0.0" y="22" width="600" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C9m-fB-P1x" id="UrW-IZ-4pe">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="89"/>
@@ -182,11 +182,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="TpR-ka-PV1">
-                                <rect key="frame" x="54" y="160" width="286" height="452"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="TpR-ka-PV1">
+                                <rect key="frame" x="54" y="160" width="608" height="240"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="240" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="Mp0-zg-4XL">
-                                        <rect key="frame" x="26" y="20" width="240" height="240"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="240" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="Mp0-zg-4XL">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
                                         <gestureRecognizers/>
                                         <variation key="widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="0.0" y="0.0" width="340" height="229"/>
@@ -195,16 +195,16 @@
                                             <outletCollection property="gestureRecognizers" destination="gpH-lQ-ZJB" appends="YES" id="1dT-nZ-dtS"/>
                                         </connections>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Moment Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sAR-BA-SG5">
-                                        <rect key="frame" x="26" y="268" width="240" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Moment Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sAR-BA-SG5">
+                                        <rect key="frame" x="246" y="0.0" width="116" height="240"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <variation key="widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="0.0" y="235" width="340" height="30"/>
                                         </variation>
                                     </textField>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Describe your moment" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="z7n-U1-jd1">
-                                        <rect key="frame" x="20" y="304" width="240" height="128"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Describe your moment" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="z7n-U1-jd1">
+                                        <rect key="frame" x="368" y="0.0" width="240" height="240"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -259,6 +259,7 @@
                         <outlet property="momentDescription" destination="z7n-U1-jd1" id="BSN-eL-Ncf"/>
                         <outlet property="momentName" destination="sAR-BA-SG5" id="Q0i-aF-DRM"/>
                         <outlet property="momentPhoto" destination="Mp0-zg-4XL" id="aoE-s7-3VK"/>
+                        <outlet property="saveButton" destination="WTb-Fz-A17" id="3Wq-u7-gyY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufY-sA-GLO" userLabel="First Responder" sceneMemberID="firstResponder"/>

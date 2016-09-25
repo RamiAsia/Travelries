@@ -8,12 +8,13 @@
 
 import UIKit
 
-class AddMomentViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class AddMomentViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     // MARK: Properties
     @IBOutlet weak var momentPhoto: UIImageView!
     @IBOutlet weak var momentName: UITextField!
     @IBOutlet weak var momentDescription: UITextView!
+    @IBOutlet weak var saveButton: UIBarButtonItem!
     
     
     
@@ -38,6 +39,23 @@ class AddMomentViewController: UIViewController, UIImagePickerControllerDelegate
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // MARK: UITextFieldDelegate
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        // Hide the keyboard
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        navigationItem.title = textField.text
+    }
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        // Disable the save button when editing
+        saveButton.enabled = false
+    }
     
     // MARK: UIImagePickerControllerDelegate
     
