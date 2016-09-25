@@ -108,17 +108,21 @@ class MomentTableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        let momentDetailController = segue.destinationViewController as! MomentViewController
-        if segue.identifier == "ShowMoment" {
-            if let selectedCell = sender as? MomentTableViewCell {
-                let indexPath = tableView.indexPathForCell(selectedCell)!
-                let selectedMoment = moments[indexPath.row]
-                momentDetailController.moment = selectedMoment
+        if let momentDetailController = segue.destinationViewController as? MomentViewController {
+            if segue.identifier == "ShowMoment" {
+                if let selectedCell = sender as? MomentTableViewCell {
+                    let indexPath = tableView.indexPathForCell(selectedCell)!
+                    let selectedMoment = moments[indexPath.row]
+                    momentDetailController.moment = selectedMoment
+                }
+            }
+            else if segue.identifier == "AddItem" {
+                print("Adding moment")
             }
         }
-        else if segue.identifier == "AddItem" {
-            print("Adding moment")
-        }
+//        else if let addMomentController = segue.destinationViewController as? AddMomentViewController {
+//            
+//        }
     }
 
     

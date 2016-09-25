@@ -17,6 +17,7 @@
 		250BD4321D9172FB0054AE7E /* MomentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250BD4311D9172FB0054AE7E /* MomentTableViewCell.swift */; };
 		256A6D811D91871E00C3F47B /* MomentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256A6D801D91871E00C3F47B /* MomentTableViewController.swift */; };
 		256A6D831D91BAA300C3F47B /* MomentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256A6D821D91BAA300C3F47B /* MomentViewController.swift */; };
+		25D1F4AB1D982B2700E4FBD1 /* AddMomentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D1F4AA1D982B2700E4FBD1 /* AddMomentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		250BD4311D9172FB0054AE7E /* MomentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MomentTableViewCell.swift; sourceTree = "<group>"; };
 		256A6D801D91871E00C3F47B /* MomentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MomentTableViewController.swift; sourceTree = "<group>"; };
 		256A6D821D91BAA300C3F47B /* MomentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MomentViewController.swift; sourceTree = "<group>"; };
+		25D1F4AA1D982B2700E4FBD1 /* AddMomentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMomentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		256A6D7F1D91870E00C3F47B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				25D1F4AA1D982B2700E4FBD1 /* AddMomentViewController.swift */,
 				256A6D801D91871E00C3F47B /* MomentTableViewController.swift */,
 				256A6D821D91BAA300C3F47B /* MomentViewController.swift */,
 			);
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				250BD40E1D9151BE0054AE7E /* ViewController.swift in Sources */,
+				25D1F4AB1D982B2700E4FBD1 /* AddMomentViewController.swift in Sources */,
 				250BD40C1D9151BE0054AE7E /* AppDelegate.swift in Sources */,
 				256A6D831D91BAA300C3F47B /* MomentViewController.swift in Sources */,
 				250BD42F1D915DB10054AE7E /* Moment.swift in Sources */,

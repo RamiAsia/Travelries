@@ -159,17 +159,21 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="My Moments" id="1D2-nb-Son">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="0S9-XW-U4I"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="0S9-XW-U4I">
+                            <connections>
+                                <segue destination="mF1-nt-9V6" kind="presentation" identifier="AddMoment" id="AQz-sY-aR2"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tfd-uh-1hD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-120" y="303"/>
+            <point key="canvasLocation" x="-204" y="569"/>
         </scene>
         <!--New Moment-->
         <scene sceneID="we9-c3-zzs">
             <objects>
-                <viewController id="0cH-hJ-xFa" sceneMemberID="viewController">
+                <viewController id="0cH-hJ-xFa" customClass="AddMomentViewController" customModule="Travelries" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="izV-ej-Qru"/>
                         <viewControllerLayoutGuide type="bottom" id="eOA-mL-JZt"/>
@@ -183,9 +187,13 @@
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="240" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="Mp0-zg-4XL">
                                         <rect key="frame" x="26" y="20" width="240" height="240"/>
+                                        <gestureRecognizers/>
                                         <variation key="widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="0.0" y="0.0" width="340" height="229"/>
                                         </variation>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="gpH-lQ-ZJB" appends="YES" id="1dT-nZ-dtS"/>
+                                        </connections>
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Moment Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sAR-BA-SG5">
                                         <rect key="frame" x="26" y="268" width="240" height="30"/>
@@ -195,10 +203,9 @@
                                             <rect key="frame" x="0.0" y="235" width="340" height="30"/>
                                         </variation>
                                     </textField>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="z7n-U1-jd1">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Describe your moment" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="z7n-U1-jd1">
                                         <rect key="frame" x="20" y="304" width="240" height="128"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <variation key="widthClass=compact" misplaced="YES">
@@ -241,11 +248,27 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="New Moment" id="Ryg-TI-20u"/>
+                    <navigationItem key="navigationItem" title="New Moment" id="Ryg-TI-20u">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="WTb-Fz-A17">
+                            <connections>
+                                <segue destination="CWr-b7-VS4" kind="show" id="3PU-6Q-4Rv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="momentDescription" destination="z7n-U1-jd1" id="BSN-eL-Ncf"/>
+                        <outlet property="momentName" destination="sAR-BA-SG5" id="Q0i-aF-DRM"/>
+                        <outlet property="momentPhoto" destination="Mp0-zg-4XL" id="aoE-s7-3VK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufY-sA-GLO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="gpH-lQ-ZJB">
+                    <connections>
+                        <action selector="shootImageFromCamera:" destination="0cH-hJ-xFa" id="8dP-xI-057"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="970.5" y="1374"/>
+            <point key="canvasLocation" x="-988.5" y="1352"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="P0x-eF-OrI">
@@ -264,7 +287,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rfw-RL-QCz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828" y="720"/>
+            <point key="canvasLocation" x="882" y="660"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SUw-QS-uZ8">
@@ -302,13 +325,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="duJ-eA-VQ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.5" y="1374"/>
+            <point key="canvasLocation" x="-6" y="1352"/>
         </scene>
     </scenes>
     <resources>
         <image name="defaultPhoto" width="360" height="360"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="F7l-ES-Kp3"/>
+        <segue reference="HHI-vT-PFo"/>
+        <segue reference="3PU-6Q-4Rv"/>
     </inferredMetricsTieBreakers>
 </document>
