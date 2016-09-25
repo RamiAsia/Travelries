@@ -255,6 +255,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="k20-yL-pPK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -273,6 +274,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uqc-V2-gjJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -291,6 +293,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="z4E-Nw-H1h">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -306,6 +309,6 @@
         <image name="defaultPhoto" width="360" height="360"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="HHI-vT-PFo"/>
+        <segue reference="F7l-ES-Kp3"/>
     </inferredMetricsTieBreakers>
 </document>
