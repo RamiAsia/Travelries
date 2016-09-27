@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7nr-ji-c2Y">
-                                <rect key="frame" x="60" y="103" width="787" height="360"/>
+                                <rect key="frame" x="60" y="103" width="967" height="540"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D5z-wO-iDQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="787" height="360"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D5z-wO-iDQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="967" height="540"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="278-y2-W3l">
-                                                <rect key="frame" x="0.0" y="0.0" width="360" height="360"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="278-y2-W3l">
+                                                <rect key="frame" x="0.0" y="0.0" width="540" height="540"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="235" id="SOT-iz-Hes"/>
                                                 </constraints>
@@ -40,14 +40,14 @@
                                                     </mask>
                                                 </variation>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sample Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDa-6F-s5C">
-                                                <rect key="frame" x="360" y="0.0" width="107" height="360"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Sample Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDa-6F-s5C">
+                                                <rect key="frame" x="540" y="0.0" width="107" height="540"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="218" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6ra-XS-hgg">
-                                                <rect key="frame" x="467" y="0.0" width="320" height="360"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="218" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6ra-XS-hgg">
+                                                <rect key="frame" x="647" y="0.0" width="320" height="540"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -128,7 +128,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okS-xa-5h7">
                                             <rect key="frame" x="97" y="60" width="153" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="irP-EX-z9W">
@@ -137,7 +137,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Moment Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJ1-eC-ZEC">
                                             <rect key="frame" x="97" y="8" width="226" height="44"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <variation key="widthClass=compact" fixedFrame="YES">
                                                 <rect key="frame" x="97" y="8" width="208" height="44"/>
@@ -251,7 +251,7 @@
                     <navigationItem key="navigationItem" title="New Moment" id="Ryg-TI-20u">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="WTb-Fz-A17">
                             <connections>
-                                <segue destination="CWr-b7-VS4" kind="show" id="3PU-6Q-4Rv"/>
+                                <segue destination="NTE-aM-tIY" kind="unwind" unwindAction="unwindToMomentList:" id="4h1-zW-2Lz"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -263,6 +263,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufY-sA-GLO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="NTE-aM-tIY" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="gpH-lQ-ZJB">
                     <connections>
                         <action selector="shootImageFromCamera:" destination="0cH-hJ-xFa" id="8dP-xI-057"/>
@@ -326,7 +327,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="duJ-eA-VQ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6" y="1352"/>
+            <point key="canvasLocation" x="24" y="1328"/>
         </scene>
     </scenes>
     <resources>
@@ -334,6 +335,5 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="HHI-vT-PFo"/>
-        <segue reference="3PU-6Q-4Rv"/>
     </inferredMetricsTieBreakers>
 </document>

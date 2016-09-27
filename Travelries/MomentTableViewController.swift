@@ -142,5 +142,24 @@ class MomentTableViewController: UITableViewController {
         moments += [moment1, moment2, moment3]
         
     }
+    
+    @IBAction func unwindToMomentList(sender: UIStoryboardSegue) {
+        if let addMomentViewController = sender.sourceViewController as? AddMomentViewController, moment = addMomentViewController.moment {
+            
+            if let selectedIndexPath = tableView.indexPathForSelectedRow {
+                // Update existing moment
+                moments[selectedIndexPath.row] = moment
+                tableView.reloadRowsAtIndexPaths([selectedIndexPath], withRowAnimation: .None)
+            }
+            else {
+                // Add new moment
+                let newIndexPath = NSIndexPath(forRow: moments.count, inSection: 0)
+                moments += [moment]
+                tableView.insertRowsAtIndexPaths([newIndexPath], withRowAnimation: .Bottom		)
+            }
+            
+            
+        }
+    }
 
 }
