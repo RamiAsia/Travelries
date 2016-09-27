@@ -66,7 +66,7 @@ class Moment: NSObject, NSCoding {
         aCoder.encodeObject(name, forKey: PropertyKey.nameKey)
         aCoder.encodeObject(momentDescription, forKey: PropertyKey.momentDescriptionKey)
         aCoder.encodeObject(photo, forKey: PropertyKey.photoKey)
-        aCoder.encodeObject(locality, forKey: PropertyKey.photoKey)
+        aCoder.encodeObject(locality, forKey: PropertyKey.localityKey)
         aCoder.encodeObject(country, forKey: PropertyKey.countryKey)
         aCoder.encodeObject(date, forKey: PropertyKey.dateKey)
         aCoder.encodeBool(favorite, forKey: PropertyKey.favoriteKey)

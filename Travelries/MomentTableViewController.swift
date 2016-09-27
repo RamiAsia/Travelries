@@ -23,6 +23,7 @@ class MomentTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
          self.navigationItem.leftBarButtonItem = self.editButtonItem()
         
+        // Load sample moments
         if let savedMoments = loadMoments() {
             moments += savedMoments
         }
