@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hxh-wF-iVj">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -19,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7nr-ji-c2Y">
-                                <rect key="frame" x="60" y="103" width="967" height="540"/>
+                                <rect key="frame" x="60" y="103" width="787" height="360"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D5z-wO-iDQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="967" height="540"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="787" height="360"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="278-y2-W3l">
-                                                <rect key="frame" x="0.0" y="0.0" width="540" height="540"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="360" height="360"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="235" id="SOT-iz-Hes"/>
                                                 </constraints>
@@ -41,13 +40,13 @@
                                                 </variation>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Sample Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDa-6F-s5C">
-                                                <rect key="frame" x="540" y="0.0" width="107" height="540"/>
+                                                <rect key="frame" x="360" y="0.0" width="107" height="360"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="218" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6ra-XS-hgg">
-                                                <rect key="frame" x="647" y="0.0" width="320" height="540"/>
+                                                <rect key="frame" x="467" y="0.0" width="320" height="360"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -119,7 +118,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MomentTableViewCell" rowHeight="90" id="C9m-fB-P1x" customClass="MomentTableViewCell" customModule="Travelries" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="22" width="600" height="90"/>
+                                <rect key="frame" x="0.0" y="86" width="600" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C9m-fB-P1x" id="UrW-IZ-4pe">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="89"/>
@@ -131,9 +130,6 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="irP-EX-z9W">
-                                            <rect key="frame" x="0.0" y="0.0" width="89" height="89"/>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Moment Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJ1-eC-ZEC">
                                             <rect key="frame" x="97" y="8" width="226" height="44"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
@@ -143,6 +139,9 @@
                                                 <rect key="frame" x="97" y="8" width="208" height="44"/>
                                             </variation>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="89" placeholderIntrinsicHeight="89" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="irP-EX-z9W">
+                                            <rect key="frame" x="0.0" y="0.0" width="89" height="89"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
@@ -185,32 +184,36 @@
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="TpR-ka-PV1">
                                 <rect key="frame" x="54" y="160" width="608" height="240"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="240" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="Mp0-zg-4XL">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="240" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="Mp0-zg-4XL">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
                                         <gestureRecognizers/>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="340" height="229"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="240" id="n1o-nm-mrJ"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="n1o-nm-mrJ"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="n1o-nm-mrJ"/>
+                                            </mask>
                                         </variation>
                                         <connections>
-                                            <outletCollection property="gestureRecognizers" destination="gpH-lQ-ZJB" appends="YES" id="1dT-nZ-dtS"/>
+                                            <outletCollection property="gestureRecognizers" destination="TG7-a1-8IU" appends="YES" id="9OJ-s4-Y87"/>
                                         </connections>
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Moment Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sAR-BA-SG5">
                                         <rect key="frame" x="246" y="0.0" width="116" height="240"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="235" width="340" height="30"/>
-                                        </variation>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Describe your moment" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="z7n-U1-jd1">
                                         <rect key="frame" x="368" y="0.0" width="240" height="240"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="271" width="340" height="229"/>
-                                        </variation>
                                     </textView>
                                 </subviews>
                                 <variation key="widthClass=compact" axis="vertical"/>
@@ -264,9 +267,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufY-sA-GLO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="NTE-aM-tIY" userLabel="Exit" sceneMemberID="exit"/>
-                <tapGestureRecognizer id="gpH-lQ-ZJB">
+                <tapGestureRecognizer cancelsTouchesInView="NO" id="TG7-a1-8IU">
                     <connections>
-                        <action selector="shootImageFromCamera:" destination="0cH-hJ-xFa" id="8dP-xI-057"/>
+                        <action selector="shootImageFromCamera:" destination="0cH-hJ-xFa" id="KAX-II-y8q"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

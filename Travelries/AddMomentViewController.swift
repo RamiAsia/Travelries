@@ -111,17 +111,17 @@ class AddMomentViewController: UIViewController, UITextFieldDelegate, UITextView
     // MARK: Actions
 
     @IBAction func shootImageFromCamera(sender: UITapGestureRecognizer) {
-        
+        print("Should open gallery")
         // Hide the keyboard if open
         momentName.resignFirstResponder()
         momentDescription.resignFirstResponder()
         
-        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {
+//        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {
             // Create UIImagePickerController to get new image
             let imagePickerController = UIImagePickerController()
             
             // Make sure the user shoots new picture of moment
-            imagePickerController.sourceType = .Camera
+            imagePickerController.sourceType = .PhotoLibrary
             
             // Set the ViewController as the delegate to be notified when picture is taken
             imagePickerController.delegate = self
@@ -130,10 +130,10 @@ class AddMomentViewController: UIViewController, UITextFieldDelegate, UITextView
             
             self.presentViewController(imagePickerController, animated: true, completion: nil)
             
-        }
-        else {
-            print("No camera available")
-        }
+//        }
+//        else {
+//            print("No camera available")
+//        }
     }
     
     func isClearText(text: String) -> Bool {

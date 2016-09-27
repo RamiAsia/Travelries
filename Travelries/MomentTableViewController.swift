@@ -23,9 +23,13 @@ class MomentTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
          self.navigationItem.leftBarButtonItem = self.editButtonItem()
         
-        
-        // Load sample moments
-        loadSampleMoments()
+        if let savedMoments = loadMoments() {
+            moments += savedMoments
+        }
+        else {
+            // Load sample moments
+            loadSampleMoments()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -74,17 +78,19 @@ class MomentTableViewController: UITableViewController {
     }
     */
 
-    /*
+
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             // Delete the row from the data source
+            moments.removeAtIndex(indexPath.row)
+            saveMoments()
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+
 
     /*
     // Override to support rearranging the table view.
@@ -157,9 +163,22 @@ class MomentTableViewController: UITableViewController {
                 moments += [moment]
                 tableView.insertRowsAtIndexPaths([newIndexPath], withRowAnimation: .Bottom		)
             }
-            
+            saveMoments()
             
         }
+    }
+    
+    // MARK: NSCoding
+    
+    func saveMoments() {
+        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(moments, toFile: Moment.ArchiveURL.path!)
+        if !isSuccessfulSave {
+            print("Error saving moments")
+        }
+    }
+    
+    func loadMoments() -> [Moment]? {
+        return NSKeyedUnarchiver.unarchiveObjectWithFile(Moment.ArchiveURL.path!) as? [Moment]
     }
 
 }
