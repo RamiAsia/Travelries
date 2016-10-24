@@ -186,9 +186,11 @@
 					250BD4071D9151BE0054AE7E = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = YG6ND6JCPX;
+						LastSwiftMigration = 0800;
 					};
 					250BD41B1D9151BE0054AE7E = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 250BD4071D9151BE0054AE7E;
 					};
 				};
@@ -382,6 +384,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.RamiAsia.Travelries;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -397,6 +400,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.RamiAsia.Travelries;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -408,6 +412,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.RamiAsia.TravelriesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Travelries.app/Travelries";
 			};
 			name = Debug;
@@ -420,6 +425,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.RamiAsia.TravelriesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Travelries.app/Travelries";
 			};
 			name = Release;

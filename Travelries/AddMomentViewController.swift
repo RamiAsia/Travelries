@@ -35,16 +35,16 @@ class AddMomentViewController: UIViewController, UITextFieldDelegate, UITextView
 
     // MARK: Navigation
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if sender === saveButton {
+        if (sender as! UIBarButtonItem) === saveButton {
             let name = momentName.text ?? ""
             let photo = momentPhoto.image
             let description = momentDescription.text
             
             // Create Moment from the data entered
-            moment = Moment(name: name, momentDescription: description, photo: photo, locality: nil, country: nil, date: NSDate(), favorite: false)
+            moment = Moment(name: name, momentDescription: description!, photo: photo, locality: nil, country: nil, date: Date(), favorite: false)
             
             
             
@@ -53,64 +53,64 @@ class AddMomentViewController: UIViewController, UITextFieldDelegate, UITextView
     
     // MARK: UITextFieldDelegate
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // Hide the keyboard
         textField.resignFirstResponder()
         return true
     }
     
-    func textFieldDidEndEditing(textField: UITextField) {
+    func textFieldDidEndEditing(_ textField: UITextField) {
         navigationItem.title = textField.text
 //        if isClearText(textField.text) {
 //            saveButton.enabled = false
 //        }
     }
     
-    func textFieldDidBeginEditing(textField: UITextField) {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
         // Disable the save button when editing
-        saveButton.enabled = false
+        saveButton.isEnabled = false
     }
     
     // MARK: UITextViewDelegate
     
-    func textViewShouldEndEditing(textView: UITextView) -> Bool {
+    func textViewShouldEndEditing(_ textView: UITextView) -> Bool {
         textView.resignFirstResponder()
         return true
     }
     
-    func textViewDidBeginEditing(textView: UITextView) {
-        saveButton.enabled = false
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        saveButton.isEnabled = false
     }
     
-    func textViewDidEndEditing(textView: UITextView) {
+    func textViewDidEndEditing(_ textView: UITextView) {
         if isClearText(textView.text) {
-            saveButton.enabled = false
+            saveButton.isEnabled = false
         }
         else {
-            saveButton.enabled = true
+            saveButton.isEnabled = true
         }
     }
     
     // MARK: UIImagePickerControllerDelegate
     
-    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
-        dismissViewControllerAnimated(true, completion: nil)
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
     }
     
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
         
         // Set Moment Photo to selected image
         momentPhoto.image = selectedImage
         
         // Dismiss the picker
-        dismissViewControllerAnimated(true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
     
     // MARK: Actions
 
-    @IBAction func shootImageFromCamera(sender: UITapGestureRecognizer) {
+    @IBAction func shootImageFromCamera(_ sender: UITapGestureRecognizer) {
         print("Should open gallery")
         // Hide the keyboard if open
         momentName.resignFirstResponder()
@@ -121,14 +121,14 @@ class AddMomentViewController: UIViewController, UITextFieldDelegate, UITextView
             let imagePickerController = UIImagePickerController()
             
             // Make sure the user shoots new picture of moment
-            imagePickerController.sourceType = .PhotoLibrary
+            imagePickerController.sourceType = .photoLibrary
             
             // Set the ViewController as the delegate to be notified when picture is taken
             imagePickerController.delegate = self
             
             imagePickerController.allowsEditing = false
             
-            self.presentViewController(imagePickerController, animated: true, completion: nil)
+            self.present(imagePickerController, animated: true, completion: nil)
             
 //        }
 //        else {
@@ -136,7 +136,11 @@ class AddMomentViewController: UIViewController, UITextFieldDelegate, UITextView
 //        }
     }
     
-    func isClearText(text: String) -> Bool {
+    func isClearText(_ text: String) -> Bool {
         return text == ""
+    }
+    
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
     }
 }

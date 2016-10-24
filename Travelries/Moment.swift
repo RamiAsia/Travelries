@@ -18,7 +18,7 @@ class Moment: NSObject, NSCoding {
     var photo: UIImage?
     var locality: String?
     var country: String?
-    var date: NSDate?
+    var date: Date?
     var favorite: Bool
     
     
@@ -37,13 +37,13 @@ class Moment: NSObject, NSCoding {
     
     // MARK: Archiving Paths
     
-    static let DocumentsDirectory = NSFileManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first!
-    static let ArchiveURL = DocumentsDirectory.URLByAppendingPathComponent("moments")
+    static let DocumentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
+    static let ArchiveURL = DocumentsDirectory.appendingPathComponent("moments")
     
     
     // MARK: Initialization
     
-    init?(name: String, momentDescription: String, photo: UIImage?, locality: String?, country: String?, date: NSDate?, favorite: Bool) {
+    init?(name: String, momentDescription: String, photo: UIImage?, locality: String?, country: String?, date: Date?, favorite: Bool) {
         self.name = name
         self.momentDescription = momentDescription
         self.photo = photo
@@ -62,25 +62,25 @@ class Moment: NSObject, NSCoding {
     
     // MARK: NSCoding
     
-    func encodeWithCoder(aCoder: NSCoder) {
-        aCoder.encodeObject(name, forKey: PropertyKey.nameKey)
-        aCoder.encodeObject(momentDescription, forKey: PropertyKey.momentDescriptionKey)
-        aCoder.encodeObject(photo, forKey: PropertyKey.photoKey)
-        aCoder.encodeObject(locality, forKey: PropertyKey.localityKey)
-        aCoder.encodeObject(country, forKey: PropertyKey.countryKey)
-        aCoder.encodeObject(date, forKey: PropertyKey.dateKey)
-        aCoder.encodeBool(favorite, forKey: PropertyKey.favoriteKey)
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(name, forKey: PropertyKey.nameKey)
+        aCoder.encode(momentDescription, forKey: PropertyKey.momentDescriptionKey)
+        aCoder.encode(photo, forKey: PropertyKey.photoKey)
+        aCoder.encode(locality, forKey: PropertyKey.localityKey)
+        aCoder.encode(country, forKey: PropertyKey.countryKey)
+        aCoder.encode(date, forKey: PropertyKey.dateKey)
+        aCoder.encode(favorite, forKey: PropertyKey.favoriteKey)
     }
     
     
     required convenience init?(coder aCoder: NSCoder) {
-        let name = aCoder.decodeObjectForKey(PropertyKey.nameKey) as! String
-        let momentDescription = aCoder.decodeObjectForKey(PropertyKey.momentDescriptionKey) as! String
-        let photo = aCoder.decodeObjectForKey(PropertyKey.photoKey) as? UIImage
-        let locality = aCoder.decodeObjectForKey(PropertyKey.localityKey) as? String
-        let country = aCoder.decodeObjectForKey(PropertyKey.countryKey) as? String
-        let date = aCoder.decodeObjectForKey(PropertyKey.dateKey) as? NSDate
-        let favorite = aCoder.decodeBoolForKey(PropertyKey.favoriteKey)
+        let name = aCoder.decodeObject(forKey: PropertyKey.nameKey) as! String
+        let momentDescription = aCoder.decodeObject(forKey: PropertyKey.momentDescriptionKey) as! String
+        let photo = aCoder.decodeObject(forKey: PropertyKey.photoKey) as? UIImage
+        let locality = aCoder.decodeObject(forKey: PropertyKey.localityKey) as? String
+        let country = aCoder.decodeObject(forKey: PropertyKey.countryKey) as? String
+        let date = aCoder.decodeObject(forKey: PropertyKey.dateKey) as? Date
+        let favorite = aCoder.decodeBool(forKey: PropertyKey.favoriteKey)
         
         self.init(name: name, momentDescription: momentDescription, photo: photo, locality: locality, country: country, date: date, favorite: favorite)
     }
